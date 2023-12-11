@@ -36,7 +36,7 @@ func (c *Log) Read(offset uint64) (Record, error) {
 }
 
 type Record struct {
-	Value  string `json:"value"`
+	Value  []byte `json:"value"`
 	Offset uint64 `json:"offset"`
 }
 
